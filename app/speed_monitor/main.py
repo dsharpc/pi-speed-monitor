@@ -13,6 +13,7 @@ if __name__== "__main__":
             res = measure_speed()
             data = extract_relevant_data(res)
             obj = SpeedMeasurement(**data)
+            print("Measured speed: ", obj)
             insert_to_db(obj)
         elif sys.argv[1] == 'build_table':
             build_table()

@@ -23,3 +23,6 @@ class SpeedMeasurement(Base):
     server_host = Column(String)
     client_isp = Column(String)
     client_isprating = Column(String)
+
+    def __repr__(self):
+        return f"<SpeedMeasurement(ts={self.timestamp}, download={self.download}, upload={self.upload})>"
