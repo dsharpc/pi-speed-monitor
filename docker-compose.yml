@@ -14,7 +14,7 @@ services:
       - PG_PORT=5432
     volumes:
       - ./app/speed_monitor:/speed_monitor
-      - ./cron.log:/cron.log
+      - ./app/logs/:/logs/
     tty: true
 
   db:
@@ -22,5 +22,7 @@ services:
     environment: 
       - POSTGRES_PASSWORD=mysecretpassword
       - POSTGRES_DB=speed_test
+    volumes:
+      - ./dbdata:/var/lib/postgresql/data
     ports: 
       - 5432:5432
