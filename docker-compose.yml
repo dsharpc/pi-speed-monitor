@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  app:
+    build: 
+      context: ./app
+      dockerfile: Dockerfile
+    command: /bin/sh
+    environment: 
+      - PG_DATABASE=speed_test
+      - PG_USER=postgres
+      - PG_PASSWORD=mysecretpassword
+      - PG_HOST=db
+      - PG_PORT=5432
+    tty: true
+
+  db:
+    image: arm32v6/postgres:13.1-alpine
+    environment: 
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DB=speed_test
