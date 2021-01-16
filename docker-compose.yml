@@ -13,6 +13,8 @@ services:
       - PG_PASSWORD=mysecretpassword
       - PG_HOST=db
       - PG_PORT=5432
+    volumes:
+      - ./app/speed_monitor:/speed_monitor
     tty: true
 
   db:
@@ -20,3 +22,5 @@ services:
     environment: 
       - POSTGRES_PASSWORD=mysecretpassword
       - POSTGRES_DB=speed_test
+    ports: 
+      - 5432:5432
