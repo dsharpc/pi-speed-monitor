@@ -1,14 +1,14 @@
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from models import Base, SpeedMeasurement
+from .models import Base, SpeedMeasurement
 
 def get_engine():
     user = os.getenv('PG_USER')
     password = os.getenv('PG_PASSWORD')
     host = os.getenv('PG_HOST')
     port = os.getenv('PG_PORT')
-    db = os.getenv('PG_DATABSE')
+    db = os.getenv('PG_DATABASE')
     engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db}")
     return engine
 
