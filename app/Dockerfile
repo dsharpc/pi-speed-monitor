@@ -11,7 +11,7 @@ COPY speed_monitor /speed_monitor
 WORKDIR /speed_monitor
 
 # CRON to run periodically
-RUN touch /cron.log
+RUN mkdir /logs
 COPY crontab /etc/crontabs/root
 RUN chmod 0644 /etc/crontabs/root
 ENV PYTHONUNBUFFERED 1
