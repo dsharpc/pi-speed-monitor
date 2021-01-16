@@ -9,3 +9,10 @@ RUN pip install -r requirements.txt
 COPY speed_monitor /speed_monitor
 
 WORKDIR /speed_monitor
+
+# CRON to run periodically
+RUN touch /cron.log
+COPY crontab /etc/crontabs/root
+RUN chmod 0644 /etc/crontabs/root
+ENV PYTHONUNBUFFERED 1
+CMD crond -f
