@@ -18,8 +18,9 @@ def extract_relevant_data(data: Dict[str, Union[str, float]]) -> Dict[str, Union
                      'client:isp', 'client:isprating']
     out_dict = {}
     for key in RELEVANT_KEYS:
-        out_dict[key] = data[key]
-        if ':' in key:
+        if ':' not in key:
+            out_dict[key] = data[key]
+        else:
             key1, key2 = key.split(':')
             out_dict[f"{key1}_{key2}"] = data[key1][key2]
     return out_dict
