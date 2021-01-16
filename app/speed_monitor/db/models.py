@@ -10,10 +10,10 @@ class SpeedMeasurement(Base):
     __tablename__ = 'speed_measurements'
 
     id = Column(Integer, primary_key=True)
-    datestamp = Column(DateTime)
-    download_speed = Column(Float)
+    timestamp = Column(DateTime)
+    download = Column(Float)
     bytes_received = Column(Float)
-    upload_speed = Column(Float)
+    upload = Column(Float)
     bytes_sent = Column(Float)
     ping = Column(Float)
     server_url = Column(String)
@@ -22,4 +22,4 @@ class SpeedMeasurement(Base):
     server_sponsor = Column(String)
     server_host = Column(String)
     client_isp = Column(String)
-    client_isp_rating = Column(String)
+    client_isprating = Column(String)
