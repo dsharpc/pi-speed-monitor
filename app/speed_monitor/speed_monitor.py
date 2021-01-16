@@ -6,6 +6,7 @@ import speedtest
 
 def measure_speed():
     s = speedtest.Speedtest()
+    s.get_best_server()
     s.download()
     s.upload()
     res = s.results.dict()
