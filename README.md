@@ -5,7 +5,7 @@ Project for tracking internet download and upload speeds. The app uses a crontab
 # Requirements
 
 For development in a non arm32 system (RPi's architechture), you need to follow
-the following steps to install qemu and enable it in Docker. [Source][https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/]
+the following steps to install qemu and enable it in Docker. [Source](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/)
 
 ```
 sudo apt-get install qemu binfmt-support qemu-user-static # Install the qemu packages
