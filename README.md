@@ -1,4 +1,4 @@
-# pi-speed-monitor
+# Pi Speed Monitor
 Project for tracking internet download and upload speeds. The app uses a crontab schedule to make measurements every 10 minutes and store them in a Postgres database.
 
 
