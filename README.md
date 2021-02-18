@@ -1,20 +1,6 @@
 # Pi Speed Monitor
 Project for tracking internet download and upload speeds. The app uses a crontab schedule to make measurements every 10 minutes and store them in a Postgres database.
 
-
-# Requirements
-
-For development in a non arm32 system (RPi's architechture), you need to follow
-the following steps to install qemu and enable it in Docker. [Source](https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/)
-
-```
-sudo apt-get install qemu binfmt-support qemu-user-static # Install the qemu packages
-docker run --rm --privileged multiarch/qemu-user-static --reset -p yes # This step will execute the registering scripts
-
-docker run --rm -t arm64v8/ubuntu uname -m # Testing the emulation environment
-#aarch64
-```
-
 # Execution  
 
 To run the system, clone the repo and use the following to create the database and initialise the cronjob.
