@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.7-slim
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev libpq-dev git
