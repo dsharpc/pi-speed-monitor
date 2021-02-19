@@ -2,7 +2,7 @@ FROM python:3.8-slim
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev libpq-dev git
-RUN pip install --upgrade setuptools pip
+RUN pip install --upgrade setuptools wheel pip
 RUN pip install psycopg2-binary apache-superset
 RUN superset db upgrade
 ENV FLASK_APP=superset
