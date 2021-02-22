@@ -1,9 +1,9 @@
-FROM python:3.7-slim
+FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get install -y build-essential libssl-dev libffi-dev python-dev python-pip libsasl2-dev libldap2-dev libpq-dev git
-RUN pip install --upgrade setuptools wheel pip
-RUN pip install psycopg2-binary apache-superset
+RUN apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3-pip libsasl2-dev libldap2-dev
+RUN pip3 install --upgrade setuptools pip
+RUN pip3 install psycopg2-binary apache-superset
 RUN superset db upgrade
 ENV FLASK_APP=superset
 RUN superset fab create-admin \
