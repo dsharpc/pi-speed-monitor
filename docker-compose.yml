@@ -26,3 +26,12 @@ services:
       - ./dbdata:/var/lib/postgresql/data
     ports: 
       - 5432:5432
+
+  superset:
+    build:
+      context: ./superset
+      args:
+        DB_STRING: postgresql+psycopg2://postgres:mysecretpassword@db:5432/speed_test
+      dockerfile: Dockerfile
+    ports:
+      - 8088:8088

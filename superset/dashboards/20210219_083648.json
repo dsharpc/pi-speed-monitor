@@ -1,0 +1,518 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "css": "",
+                "dashboard_title": "Speed Monitor",
+                "description": null,
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 0, \"default_filters\": \"{\\\"3\\\": {\\\"__time_range\\\": \\\"No filter\\\"}}\", \"color_scheme\": \"googleCategory10c\", \"filter_scopes\": {\"3\": {\"__time_range\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}}, \"label_colors\": {\"AVG(download)\": \"#3366cc\", \"AVG(upload)\": \"#dc3912\", \"Average Download\": \"#ff9900\", \"Average Upload\": \"#109618\", \"download\": \"#990099\"}, \"remote_id\": 1}",
+                "position_json": "{\"CHART-Oem3KDw7QJ\":{\"children\":[],\"id\":\"CHART-Oem3KDw7QJ\",\"meta\":{\"chartId\":3,\"height\":56,\"sliceName\":\"DateFilter\",\"uuid\":\"3a2e6c4b-5092-425f-ac0a-a81976b2861f\",\"width\":2},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-goTueI82V3\",\"ROW-tuA2WwYri\"],\"type\":\"CHART\"},\"CHART-TK3JVw6s5x\":{\"children\":[],\"id\":\"CHART-TK3JVw6s5x\",\"meta\":{\"chartId\":1,\"height\":73,\"sliceName\":\"Upload and Download over last week\",\"uuid\":\"47e2eb91-f947-49a4-9b8d-6504e81dacef\",\"width\":10},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-goTueI82V3\",\"ROW-tuA2WwYri\"],\"type\":\"CHART\"},\"CHART-XXq4Le4pYc\":{\"children\":[],\"id\":\"CHART-XXq4Le4pYc\",\"meta\":{\"chartId\":5,\"height\":50,\"sliceName\":\"Average Speed by Hour\",\"uuid\":\"a56ce725-e328-4ecd-8056-b4251db851c2\",\"width\":7},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-Wjx1-cX-B\",\"ROW-6ESFQ9zrN\"],\"type\":\"CHART\"},\"CHART-oT-VEiaUoG\":{\"children\":[],\"id\":\"CHART-oT-VEiaUoG\",\"meta\":{\"chartId\":2,\"height\":47,\"sliceName\":\"Speed by Day of Week\",\"uuid\":\"dc2cb403-c4d2-495c-9477-4d6c062c3fd8\",\"width\":5},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-Wjx1-cX-B\",\"ROW-6ESFQ9zrN\"],\"type\":\"CHART\"},\"CHART-wmeFFKuKyf\":{\"children\":[],\"id\":\"CHART-wmeFFKuKyf\",\"meta\":{\"chartId\":4,\"height\":82,\"sliceName\":\"Download Speed Histogram\",\"uuid\":\"fe2a82ce-da89-41cc-b013-098a5ef1115f\",\"width\":12},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-uoA6cvOMM\",\"ROW-OFFjHKWJ1\"],\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"HEADER-8B9iQiw_KU\",\"TABS-IEcQpp7YiW\"],\"id\":\"GRID_ID\",\"parents\":[\"ROOT_ID\"],\"type\":\"GRID\"},\"HEADER-8B9iQiw_KU\":{\"children\":[],\"id\":\"HEADER-8B9iQiw_KU\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\",\"headerSize\":\"MEDIUM_HEADER\",\"text\":\"Internet Speed Monitoring\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"HEADER\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"Speed Monitor\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-6ESFQ9zrN\":{\"children\":[\"CHART-oT-VEiaUoG\",\"CHART-XXq4Le4pYc\"],\"id\":\"ROW-6ESFQ9zrN\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-Wjx1-cX-B\"],\"type\":\"ROW\"},\"ROW-OFFjHKWJ1\":{\"children\":[\"CHART-wmeFFKuKyf\"],\"id\":\"ROW-OFFjHKWJ1\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-uoA6cvOMM\"],\"type\":\"ROW\"},\"ROW-tuA2WwYri\":{\"children\":[\"CHART-Oem3KDw7QJ\",\"CHART-TK3JVw6s5x\"],\"id\":\"ROW-tuA2WwYri\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\",\"TAB-goTueI82V3\"],\"type\":\"ROW\"},\"TAB-Wjx1-cX-B\":{\"children\":[\"ROW-6ESFQ9zrN\"],\"id\":\"TAB-Wjx1-cX-B\",\"meta\":{\"text\":\"Average by day and hour\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\"],\"type\":\"TAB\"},\"TAB-goTueI82V3\":{\"children\":[\"ROW-tuA2WwYri\"],\"id\":\"TAB-goTueI82V3\",\"meta\":{\"text\":\"Rolling average\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\"],\"type\":\"TAB\"},\"TAB-uoA6cvOMM\":{\"children\":[\"ROW-OFFjHKWJ1\"],\"id\":\"TAB-uoA6cvOMM\",\"meta\":{\"text\":\"Histogram\"},\"parents\":[\"ROOT_ID\",\"GRID_ID\",\"TABS-IEcQpp7YiW\"],\"type\":\"TAB\"},\"TABS-IEcQpp7YiW\":{\"children\":[\"TAB-goTueI82V3\",\"TAB-Wjx1-cX-B\",\"TAB-uoA6cvOMM\"],\"id\":\"TABS-IEcQpp7YiW\",\"meta\":{},\"parents\":[\"ROOT_ID\",\"GRID_ID\"],\"type\":\"TABS\"}}",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "public.speed_measurements",
+                            "datasource_type": "table",
+                            "id": 1,
+                            "params": "{\"adhoc_filters\": [], \"annotation_layers\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"bnbColors\", \"comparison_type\": \"values\", \"datasource\": \"1__table\", \"granularity_sqla\": \"timestamp\", \"groupby\": [], \"label_colors\": {\"download\": \"#1FA8C9\"}, \"left_margin\": \"auto\", \"line_interpolation\": \"linear\", \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"download\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 3, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"DOUBLE PRECISION\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(download)\", \"optionName\": \"metric_bwbhbda7bk_zzyofbyqzu\", \"sqlExpression\": null}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"upload\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 5, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"DOUBLE PRECISION\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(upload)\", \"optionName\": \"metric_vjfu5lxp9h_8f4z8mqrdza\", \"sqlExpression\": null}], \"min_periods\": \"\", \"order_desc\": true, \"rich_tooltip\": true, \"rolling_periods\": \"\", \"rolling_type\": \"None\", \"row_limit\": 10000, \"show_brush\": \"auto\", \"slice_id\": 1, \"time_grain_sqla\": \"PT1H\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"line\", \"x_axis_format\": \"smart_date\", \"x_ticks_layout\": \"auto\", \"y_axis_bounds\": [null, null], \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 1, \"datasource_name\": \"speed_measurements\", \"schema\": \"public\", \"database_name\": \"speed_test\"}",
+                            "slice_name": "Upload and Download over last week",
+                            "viz_type": "line"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "public.speed_measurements",
+                            "datasource_type": "table",
+                            "id": 2,
+                            "params": "{\"adhoc_filters\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"googleCategory10c\", \"columns\": [], \"datasource\": \"1__table\", \"granularity_sqla\": \"timestamp\", \"groupby\": [\"Day of Week\"], \"label_colors\": {\"AVG(download)\": \"#3366cc\", \"AVG(upload)\": \"#dc3912\", \"Average Download\": \"#ff9900\", \"Average Upload\": \"#109618\", \"download\": \"#990099\"}, \"metrics\": [{\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"download\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 3, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"DOUBLE PRECISION\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(download)\", \"optionName\": \"metric_b718a3gnl1l_8houyxwvo5\", \"sqlExpression\": null}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"upload\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 5, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"DOUBLE PRECISION\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": false, \"isNew\": false, \"label\": \"AVG(upload)\", \"optionName\": \"metric_xx9tcgqe5o_dsamajgxxh5\", \"sqlExpression\": null}], \"order_bars\": true, \"row_limit\": 10000, \"show_bar_value\": false, \"show_controls\": false, \"show_legend\": false, \"slice_id\": 2, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_ticks_layout\": \"auto\", \"y_axis_format\": \"SMART_NUMBER\", \"remote_id\": 2, \"datasource_name\": \"speed_measurements\", \"schema\": \"public\", \"database_name\": \"speed_test\"}",
+                            "slice_name": "Speed by Day of Week",
+                            "viz_type": "dist_bar"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "public.speed_measurements",
+                            "datasource_type": "table",
+                            "id": 3,
+                            "params": "{\"adhoc_filters\": [], \"datasource\": \"1__table\", \"date_filter\": true, \"granularity_sqla\": \"timestamp\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"filter_box\", \"remote_id\": 3, \"datasource_name\": \"speed_measurements\", \"schema\": \"public\", \"database_name\": \"speed_test\"}",
+                            "slice_name": "DateFilter",
+                            "viz_type": "filter_box"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "public.speed_measurements",
+                            "datasource_type": "table",
+                            "id": 4,
+                            "params": "{\"adhoc_filters\": [], \"all_columns_x\": [\"download\"], \"color_scheme\": \"supersetColors\", \"datasource\": \"1__table\", \"granularity_sqla\": \"timestamp\", \"groupby\": [], \"label_colors\": {\"AVG(download)\": \"#1FA8C9\", \"AVG(upload)\": \"#454E7C\", \"download\": \"#5AC189\"}, \"link_length\": \"10\", \"normalized\": false, \"row_limit\": 10000, \"slice_id\": 4, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"histogram\", \"remote_id\": 4, \"datasource_name\": \"speed_measurements\", \"schema\": \"public\", \"database_name\": \"speed_test\"}",
+                            "slice_name": "Download Speed Histogram",
+                            "viz_type": "histogram"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null,
+                            "datasource_name": "public.speed_measurements",
+                            "datasource_type": "table",
+                            "id": 5,
+                            "params": "{\"adhoc_filters\": [], \"bottom_margin\": \"auto\", \"color_scheme\": \"googleCategory10c\", \"columns\": [], \"contribution\": false, \"datasource\": \"1__table\", \"granularity_sqla\": \"timestamp\", \"groupby\": [\"<new column>\"], \"label_colors\": {\"AVG(download)\": \"#3366cc\", \"AVG(upload)\": \"#dc3912\", \"Average Download\": \"#ff9900\", \"download\": \"#109618\"}, \"metrics\": [{\"aggregate\": null, \"column\": null, \"expressionType\": \"SQL\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Average Download\", \"optionName\": \"metric_xx1w5xp06x_s710c0g3cgi\", \"sqlExpression\": \"AVG(download)\"}, {\"aggregate\": \"AVG\", \"column\": {\"column_name\": \"upload\", \"description\": null, \"expression\": null, \"filterable\": true, \"groupby\": true, \"id\": 5, \"is_dttm\": false, \"python_date_format\": null, \"type\": \"DOUBLE PRECISION\", \"verbose_name\": null}, \"expressionType\": \"SIMPLE\", \"hasCustomLabel\": true, \"isNew\": false, \"label\": \"Average Upload\", \"optionName\": \"metric_zod85iwlg3_zscz0v52ol\", \"sqlExpression\": null}], \"order_bars\": true, \"reduce_x_ticks\": false, \"row_limit\": 10000, \"slice_id\": 5, \"time_range\": \"No filter\", \"time_range_endpoints\": [\"inclusive\", \"exclusive\"], \"url_params\": {}, \"viz_type\": \"dist_bar\", \"x_ticks_layout\": \"auto\", \"y_axis_format\": \"~g\", \"remote_id\": 5, \"datasource_name\": \"speed_measurements\", \"schema\": \"public\", \"database_name\": \"speed_test\"}",
+                            "slice_name": "Average Speed by Hour",
+                            "viz_type": "dist_bar"
+                        }
+                    }
+                ],
+                "slug": null
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "cache_timeout": null,
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "id",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 1,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "INTEGER",
+                            "uuid": "8cec415c-929a-4a34-8129-966658a07553",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "timestamp",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 2,
+                            "is_active": null,
+                            "is_dttm": true,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "uuid": "ad698d2c-567d-4973-8845-78ca5beb0d72",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "download",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 3,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE PRECISION",
+                            "uuid": "8a302642-e689-46ee-a756-35c07dda739d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "bytes_received",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 4,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE PRECISION",
+                            "uuid": "53e7ef2c-cb81-4fd7-ae29-a71218c19f78",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "upload",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 5,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE PRECISION",
+                            "uuid": "60d61ef8-16d2-44d6-8ec8-a44a95b1ba2f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "bytes_sent",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 6,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE PRECISION",
+                            "uuid": "b9b56d2a-ebac-4b77-988d-f466d869cdb2",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "ping",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 7,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "DOUBLE PRECISION",
+                            "uuid": "116661df-3f87-47b3-9db4-a158330594c7",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "server_url",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 8,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "4a2f4139-2c12-44fa-9b2a-0a1040544a65",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "server_name",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 9,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "f8b5d79a-4be2-414e-b3d7-163a48c45d6e",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "server_country",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 10,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "4adca691-1a54-405f-85f1-9d8aabbe432f",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "server_sponsor",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 11,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "943b7bce-0319-4d68-947d-08f321f9277d",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "server_host",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 12,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "24a48f59-fc5e-44a0-b91e-ca0efdb23fc8",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "client_isp",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 13,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "2d2d0efa-955d-4339-9862-9f4556b323b7",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "column_name": "client_isprating",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "description": null,
+                            "expression": null,
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 14,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "VARCHAR",
+                            "uuid": "351078fb-267a-4156-aef0-7d2a11e0bfbd",
+                            "verbose_name": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-13T16:18:01"
+                            },
+                            "column_name": "Day of Week",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:33:18"
+                            },
+                            "description": null,
+                            "expression": "extract(isodow from timestamp) || '. ' || to_char(timestamp, 'Day')",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 16,
+                            "is_active": null,
+                            "is_dttm": null,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": "STRING",
+                            "uuid": "37329c5b-e457-444b-8f82-abcc9be218c5",
+                            "verbose_name": "Day of Week"
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-13T16:16:28"
+                            },
+                            "column_name": "<new column>",
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-11T11:08:21"
+                            },
+                            "description": null,
+                            "expression": "date_part('hour', timestamp)",
+                            "filterable": true,
+                            "groupby": true,
+                            "id": 17,
+                            "is_active": null,
+                            "is_dttm": false,
+                            "python_date_format": null,
+                            "table_id": 1,
+                            "type": null,
+                            "uuid": "897a0ae7-30a7-43a6-9a7f-aae530d85cde",
+                            "verbose_name": "Hour"
+                        }
+                    }
+                ],
+                "database_id": 1,
+                "default_endpoint": null,
+                "description": null,
+                "extra": null,
+                "fetch_values_predicate": null,
+                "filter_select_enabled": false,
+                "main_dttm_col": "timestamp",
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "changed_by_fk": 1,
+                            "changed_on": {
+                                "__datetime__": "2021-02-10T22:31:36"
+                            },
+                            "created_by_fk": 1,
+                            "created_on": {
+                                "__datetime__": "2021-02-10T22:20:33"
+                            },
+                            "d3format": null,
+                            "description": null,
+                            "expression": "COUNT(*)",
+                            "extra": null,
+                            "id": 1,
+                            "metric_name": "count",
+                            "metric_type": null,
+                            "table_id": 1,
+                            "uuid": "e26a41e4-2532-42ea-b7a3-8cbea1718d06",
+                            "verbose_name": "COUNT(*)",
+                            "warning_text": null
+                        }
+                    }
+                ],
+                "offset": 0,
+                "params": "{\"remote_id\": 1, \"database_name\": \"speed_test\"}",
+                "schema": "public",
+                "sql": "",
+                "table_name": "speed_measurements",
+                "template_params": null
+            }
+        }
+    ]
+}
