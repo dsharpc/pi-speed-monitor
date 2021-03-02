@@ -7,7 +7,7 @@ RUN apt-get install ./apache-arrow-archive-keyring-latest-focal.deb
 RUN apt-get update
 RUN apt-get install -y libarrow-dev=1.0.1-1 libarrow-python-dev=1.0.1-1
 RUN pip3 install --upgrade setuptools pip
-RUN ARROW_HOME=/usr PYARROW_CMAKE_OPTIONS="-DARROW_ARMV8_ARCH=armv8-a" pip3 install psycopg2-binary apache-superset==0.38.1
+RUN ARROW_HOME=/usr PYARROW_CMAKE_OPTIONS="-DARROW_ARMV8_ARCH=armv8-a" pip3 install psycopg2-binary apache-superset==1.0.1
 RUN superset db upgrade
 ENV FLASK_APP=superset
 RUN superset fab create-admin \
