@@ -1,6 +1,8 @@
 # Pi Speed Monitor ⏲️
 Project for tracking internet download and upload speeds. The app uses a crontab schedule to make measurements every 10 minutes and store them in a Postgres database.
 
+**Note: This tool was built and tested to work on a Raspberry Pi 4 running 64-bit Ubuntu 20.04**
+
 # Execution ⚙️
 
 To run the system, clone the repo and use the following to create the database and initialise the cronjob.
